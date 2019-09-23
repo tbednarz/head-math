@@ -1,0 +1,23 @@
+h1{
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+}
+.container{
+    display:grid;
+    height: 40vh;
+    width: 100vw;
+    grid-template-rows: 1;
+    
+}
+.wrapper{
+   background: black;
+   color:white;
+   font-size: 10vw;
+   text-align: center;
+}
+.wrapper > div{
+    display: inline;
+    padding: 20px;
+    margin:0;
+}
