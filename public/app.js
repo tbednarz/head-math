@@ -1,4 +1,4 @@
-let slider = document.getElementById("slider-range").value;
+let slider = document.getElementById("slider-range");
 
 const twoNums = () => {
   let max = 99;
@@ -16,7 +16,11 @@ const twoNums = () => {
     two.innerHTML = nums[1];
   }
 };
-setInterval(twoNums, 4000); //<-- change 4000 to slider value from above
+let timerId = setInterval(twoNums, 4000); //<-- change 4000 to slider value from above
+slider.addEventListener("change", function(newVal) {
+  clearInterval(timerId);
+  timerId = setInterval(twoNums, slider.value);
+});
 
 const operator = document.getElementById("operation");
 const changeAdd = () => {
