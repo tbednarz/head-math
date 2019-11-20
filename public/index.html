@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 style="font-size:10vw" id="app-head">Quick Math</h1>
+    <h1 style="font-size:10vw" id="app-head">Addition</h1>
+
     <div class="container">
       Pick your operator
       <div id="operationPick">
-        <button onclick="changeAdd()">+</button>
-        <button onclick="changeSub()">-</button>
-        <button onclick="changeMult()">*</button>
-        <button onclick="changeDiv()">/</button>
+        <button class="picker" onclick="changeAdd()">+</button>
+        <button class="picker" onclick="changeSub()">-</button>
+        <button class="picker" onclick="changeMult()">*</button>
+        <button class="picker" onclick="changeDiv()">/</button>
       </div>
       <div class="wrapper">
         <div id="numOne"></div>
@@ -30,6 +31,12 @@
         />
 
         <div id="practice">Mental Math Practice</div>
+      </div>
+      <div id="about-app">
+        I created this application for children or anyone who has a hard time
+        with mental math <br />
+        Use the slider to change the speed of the numbers changing <br />
+        Perform the operation in your head!
       </div>
     </div>
     <footer>Created by Tres Bednarz</footer>

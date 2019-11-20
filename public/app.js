@@ -17,7 +17,7 @@ const twoNums = () => {
   }
 };
 let timerId = setInterval(twoNums, 4000); //<-- change 4000 to slider value from above
-slider.addEventListener("change", function(newVal) {
+slider.addEventListener("change", function() {
   clearInterval(timerId);
   timerId = setInterval(twoNums, slider.value);
 });
@@ -28,6 +28,7 @@ const changeAdd = () => {
     return true;
   } else {
     operator.innerHTML = "+";
+    document.getElementById("app-head").innerHTML = "Addition";
   }
 };
 
@@ -36,6 +37,7 @@ const changeSub = () => {
     return true;
   } else {
     operator.innerHTML = "-";
+    document.getElementById("app-head").innerHTML = "Subtraction";
   }
 };
 
@@ -44,6 +46,7 @@ const changeMult = () => {
     return true;
   } else {
     operator.innerHTML = "*";
+    document.getElementById("app-head").innerHTML = "Multiplication";
   }
 };
 
@@ -52,5 +55,6 @@ const changeDiv = () => {
     return true;
   } else {
     operator.innerHTML = "/";
+    document.getElementById("app-head").innerHTML = "Division";
   }
 };
