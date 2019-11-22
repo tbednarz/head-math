@@ -10,18 +10,21 @@
 
     <div class="container">
       Pick your operator
+      <!-- operation picker -->
       <div id="operationPick">
         <button class="picker" onclick="changeAdd()">+</button>
         <button class="picker" onclick="changeSub()">-</button>
         <button class="picker" onclick="changeMult()">*</button>
         <button class="picker" onclick="changeDiv()">/</button>
       </div>
+      <!-- Equation setup -->
       <div class="wrapper">
         <div id="numOne"></div>
         <div id="operation">+</div>
-        <div id="numTwo">=</div>
+        <div id="numTwo"></div>
+        =
         <div id="answer"></div>
-
+        <!-- input range is in milliseconds -->
         <input
           type="range"
           name="range"
@@ -33,8 +36,8 @@
         <div id="practice">Mental Math Practice</div>
       </div>
       <div id="about-app">
-        I created this application for children or anyone who has a hard time
-        with mental math <br />
+        I created this application for anyone who has a hard time with mental
+        math <br />
         Use the slider to change the speed of the numbers changing <br />
         Perform the operation in your head!
       </div>
