@@ -1,7 +1,7 @@
 # quick-head-math
 
-**I created this app for my own personal use to practice mental math
-  this will produce two numbers on a timer set by the slider (1-10 seconds)
+**I created this app for my own personal use to practice mental math.
+  This will produce two numbers on a timer set by the slider (1-10 seconds)
   hover over the white box to see if you came up with the correct answer!**
 
 
