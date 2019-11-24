@@ -19,20 +19,25 @@
       </div>
       <!-- Equation setup -->
       <div class="wrapper">
-        <div id="numOne"></div>
-        <div id="operation">+</div>
-        <div id="numTwo"></div>
-        =
-        <div id="answer"></div>
-        <!-- input range is in milliseconds -->
-        <input
-          type="range"
-          name="range"
-          id="slider-range"
-          min="1000"
-          max="10000"
-        />
+        <div id="equation">
+          <div class="equation-set" id="numOne"></div>
+          <div class="equation-set" id="operation">+</div>
+          <div class="equation-set" id="numTwo"></div>
+          <div class="equation-set" id="equals">=</div>
+          <div class="equation-set" id="answer"></div>
+        </div>
 
+        <!-- input range is in milliseconds -->
+        <div id="slider-box">
+          <input
+            type="range"
+            name="range"
+            id="slider-range"
+            min="1000"
+            max="10000"
+          />
+        </div>
+        <div>Slower -------- Faster</div>
         <div id="practice">Mental Math Practice</div>
       </div>
       <div id="about-app">
