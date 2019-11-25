@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   background: rgb(113, 218, 127);
+  font-family: "Baloo", cursive;
 }
 h1 {
   width: 100vw;
@@ -9,6 +10,10 @@ h1 {
   margin-top: 0;
   text-align: center;
   padding-bottom: 4vh;
+  font-size: 10vw;
+}
+#container-head {
+  font-size: 2vw;
 }
 .container {
   position: relative;
@@ -35,12 +40,19 @@ h1 {
 button {
   width: 10vw;
   height: 10vh;
-  font-size: 3em;
-  color: white;
-  background: transparent;
+  font-size: 2em;
+
+  color: rgb(0, 0, 0);
+  background: whitesmoke;
+  opacity: 0.6;
   border: groove;
+  transition: opacity 0.3s;
   border-radius: 10px;
   cursor: pointer;
+  outline: none;
+}
+button:hover {
+  opacity: 1;
 }
 .equation-set {
   display: inline;
@@ -50,9 +62,12 @@ button {
   background: white;
   margin: 0;
   padding: 0;
+  opacity: 0.6;
+  transition: opacity 0.2s;
 }
 #answer:hover {
-  background: black;
+  background: rgb(0, 47, 255);
+  opacity: 1;
 }
 #about-app {
   font-size: 2em;
@@ -67,7 +82,14 @@ footer {
 }
 #slider-range {
   transform: rotate(180deg);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.5s;
+}
+#slider-range:hover {
+  opacity: 1;
 }
 #slider-box {
   display: block;
+  outline: none;
 }

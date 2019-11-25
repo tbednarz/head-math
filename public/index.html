@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 style="font-size:10vw" id="app-head">Addition</h1>
+    <h1 id="app-head">Addition</h1>
 
     <div class="container">
-      Pick your operator
+      <div id="container-head">Pick your operator</div>
       <!-- operation picker -->
       <div id="operationPick">
-        <button class="picker" onclick="changeAdd()">+</button>
-        <button class="picker" onclick="changeSub()">-</button>
-        <button class="picker" onclick="changeMult()">*</button>
-        <button class="picker" onclick="changeDiv()">/</button>
+        <button class="picker" id="add" onclick="changeAdd()">+</button>
+        <button class="picker" id="subtract" onclick="changeSub()">-</button>
+        <button class="picker" id="multiply" onclick="changeMult()">*</button>
+        <button class="picker" id="divide" onclick="changeDiv()">/</button>
       </div>
       <!-- Equation setup -->
       <div class="wrapper">
