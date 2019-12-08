@@ -1,5 +1,18 @@
 let slider = document.getElementById("slider-range");
 
+const buttons = document.querySelectorAll("button");
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener(
+    "click",
+    function(e) {
+      for (i = 0; i < buttons.length; i++) {
+        buttons[i].style.opacity = 0.6;
+      }
+      e.target.style.opacity = 1;
+    },
+    false
+  );
+}
 //Generates two numbers between 1-100
 //pushes too an array
 //then pushes into html

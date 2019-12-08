@@ -37,26 +37,21 @@ h1 {
   font-size: 1vw;
 }
 
-button {
+.picker {
   width: 10vw;
   height: 10vh;
-  font-size: 2em;
-
-  color: rgb(0, 0, 0);
-  background: whitesmoke;
+  font-size: 3em;
   opacity: 0.6;
+  color: rgb(0, 0, 0);
   border: groove;
-  transition: opacity 0.3s;
   border-radius: 10px;
   cursor: pointer;
   outline: none;
 }
-button:hover {
-  opacity: 1;
-}
+
 .equation-set {
   display: inline;
-  font-size: 3em;
+  font-size: 5em;
 }
 #answer {
   background: white;
